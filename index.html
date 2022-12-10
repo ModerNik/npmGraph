@@ -31,7 +31,7 @@
     <meta name="description" content="Graph / visualize of npm dependencies" />
     <meta name="keywords" content="visualize, visualization, graph, npm, npm modules, npm graph, npm licenses" />
 
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Material+Icons" rel="stylesheet" />
     <link href="/css/index.scss" rel="stylesheet" />
 
@@ -58,9 +58,6 @@
     <script type="module" src="/js/index.tsx"></script>
     <script>
         window.addEventListener('DOMContentLoaded', function () {
-            // Detect load failure.  `indexLoaded` gets set by index.js if it loads properly
-            // If it's not set here, then a script failed to load (probably due to a parse
-            // error from some unsupported language feature).
             if (window.indexLoaded) return;
 
             const body = document.body;

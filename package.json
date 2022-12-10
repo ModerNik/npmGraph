@@ -22,7 +22,6 @@
         "react-dom": "18.0.0",
         "semver": "7.3.7"
     },
-    "description": "Visualize npm dependency graphs (public and private!)",
     "keywords": [
         "npm",
         "dependencies",
