@@ -1,0 +1,75 @@
+:root {
+    color-scheme: light dark;
+
+    --rad_sm: 5px;
+    --rad_lg: 10px;
+    --splitter-size: 2em;
+    --inspector-size: 32em;
+    --tabs-height: 24pt;
+    --bg-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent 100%);
+
+    /* https://coolors.co/020303-f1f4f4-c8d3a7-e65c00 */
+    --text: #020303;
+    --text-dim: #999;
+    --bg0: #f1f4f4;
+    --bg1: #d6d6d6;
+    --bg2: #ddd;
+    --tabs-bg: #7e7e7d;
+    --tabs-text: #fff;
+    --highlight: #e65c00;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        background-color: #111;
+
+        /* https://coolors.co/f1f4f4-606c38-283618-ff761a */
+        --text: #f3f3f3;
+        --text-dim: #766;
+        --bg0: #262222;
+        --bg1: #696666;
+        --bg2: #333;
+        --highlight: #ff761a;
+        --inset-shadow-color: black;
+    }
+}
+
+html {
+    font-family: system-ui, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 10pt;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body.fail {
+    /* Image from https://www.redbubble.com/people/JonThomson/shop */
+    background: url("/images/fail_giraffe.png") right 0 no-repeat;
+    background-color: var(--bg1);
+    background-size: 30%;
+}
+
+#app {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+h2 {
+    font-size: 14pt;
+    border-radius: var(--rad_sm);
+}
+
+.material-icons {
+    font-size: inherit;
+}
